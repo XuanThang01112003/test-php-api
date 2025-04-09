@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-php-api
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: PHP_VERSION
+        value: 8.1
+    rootDir: .
+    staticPublishPath: public
