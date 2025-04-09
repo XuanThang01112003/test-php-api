@@ -27,7 +27,7 @@ try {
 
     // Thêm đường dẫn ảnh đầy đủ vào mỗi sản phẩm
     foreach ($products as &$product) {
-        $product['HinhAnh'] = 'http://dientuonlineapi.byethost15.com/images/' . $product['HinhAnh'];
+        $product['HinhAnh'] = 'https://test-php-api-t67p.onrender.com/images/' . $product['HinhAnh'];
     }
 
     // Trả về danh sách sản phẩm dưới dạng JSON
