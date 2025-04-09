@@ -1,10 +1,13 @@
 <?php
-$host = 'mysql.railway.internal';
+$host = 'trolley.proxy.rlwy.net';
+$port = 29198;
 $db   = 'railway';
 $user = 'root';
 $pass = 'HkufiVIsNjYOrCIhOeiSqTXbOGrCuDeM';
 $charset = 'utf8mb4';
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+
+// Dùng cả host + port
+$dsn = "mysql:host=$host;port=$port;dbname=$db;charset=$charset";
 
 $pdo = null; // <-- thêm dòng này nếu chưa có
 
