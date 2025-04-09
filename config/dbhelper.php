@@ -4,9 +4,9 @@ class Db {
     private $dbh = null;
 
     public function __construct() {
-        $driver = "mysql:host=sql210.byethost15.com;dbname=b15_38711376_dientu";
+        $driver = "mysql://root:HkufiVIsNjYOrCIhOeiSqTXbOGrCuDeM@trolley.proxy.rlwy.net:29198/railway";
         try {
-            $this->dbh = new PDO($driver, 'b15_38711376', '12345678Aa@'); 
+            $this->dbh = new PDO($driver, 'root', 'HkufiVIsNjYOrCIhOeiSqTXbOGrCuDeM'); 
             $this->dbh->query("set names 'utf8'");
         } catch (PDOException $e) {
             echo "Err: " . $e->getMessage();

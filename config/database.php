@@ -1,10 +1,9 @@
 <?php
-$host = 'sql210.byethost15.com';
-$db   = 'b15_38711376_dientu';
-$user = 'b15_38711376';
-$pass = '12345678Aa@';
+$host = 'mysql.railway.internal';
+$db   = 'railway';
+$user = 'root';
+$pass = 'HkufiVIsNjYOrCIhOeiSqTXbOGrCuDeM';
 $charset = 'utf8mb4';
-
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 $pdo = null; // <-- thêm dòng này nếu chưa có
