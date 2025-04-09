@@ -1,7 +1,10 @@
 # Base image PHP + Apache
 FROM php:8.1-apache
 
-# Copy toàn bộ code vào thư mục gốc của Apache
+# Cài extension pdo_mysql
+RUN docker-php-ext-install pdo pdo_mysql
+
+# Copy toàn bộ mã nguồn vào thư mục web server
 COPY . /var/www/html/
 
 # Mở port 80
